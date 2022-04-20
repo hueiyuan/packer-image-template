@@ -1,0 +1,15 @@
+[Unit]
+Description=Service Example Daemon
+Documentation=https://nifi.apache.org/docs.html
+Requires=network.target
+After=network.target
+
+[Service]    
+Type=forking
+WorkingDirectory=/opt/example
+ExecStart=/opt/example/xxx.sh start
+ExecStop=/opt/example/xxx.sh stop
+ExecReload=/opt/example/xxx.sh restart
+
+[Install]
+WantedBy=default.target
