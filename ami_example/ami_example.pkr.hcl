@@ -73,6 +73,11 @@ variable "test_var"{
     default     = "just test"
 }
 
+variable "env" {
+    type        = string
+    description = "Setting current AMI Environment"
+}
+
 source "amazon-ebs" "ami-example" {
     access_key = var.aws_access_key
     secret_key = var.aws_secret_key
