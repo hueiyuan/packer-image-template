@@ -1,9 +1,6 @@
 # packer-image-template
 Build image with Packer, like AMI, docker image, etc.
 
-
-# Packer usage for build AMI
-
 ## Install Pakcer on your localhose
 * Homebrew on OS X
 ```
